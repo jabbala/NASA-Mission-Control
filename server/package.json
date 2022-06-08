@@ -1,0 +1,31 @@
+{
+  "name": "nasa-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "test-watch": "jest --watch",
+    "watch": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "cluster": "pm2 start src/server.js -i max"
+  },
+  "author": "Gunasekar Jabbala",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7",
+    "morgan": "^1.10.0",
+    "nasa_mission_control": "file:..",
+    "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.15",
+    "supertest": "6.1.6"
+  }
+}
